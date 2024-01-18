@@ -11,6 +11,7 @@ board = [
     [8,0,0,5,1,2,0,0,4]
 ]
 
+#Function that prints a board
 def printBoard(board):
     for i in range(len(board)):
         if i % 3 ==0 and i != 0:
@@ -23,4 +24,12 @@ def printBoard(board):
             else:
                 print (str(board[i][j]) + " ", end="")
 
-printBoard(board)
+#Function that finds an empty space in the board 
+#Returns a tuple (row, column)
+def findEmpty(board):
+    for i in range(len(board)):
+        for j in range(len(board[0])):
+            if board[i][j] == 0:
+                return (i, j) 
+
+#printBoard(board)
