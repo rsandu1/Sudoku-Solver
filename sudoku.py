@@ -77,7 +77,10 @@ def valid(board, number, position):
                 return False
 
     return True
+print("___________________________________")
+print()
 printBoard(board)
 solve(board)
 print("___________________________________")
 printBoard(board)
+print("___________________________________")
